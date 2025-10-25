@@ -25,6 +25,13 @@ body:
       placeholder: |
         Describe the behavior or result that you expected instead of the observed one. Please provide screenshots if needed
   - type: input
+    id: version
+    validations:
+      required: true
+    attributes:
+      label: loonflow's version
+      description: please use the released version, name startswith 'r'. eg. r3.0.0, r.2.0.18 etc.
+  - type: input
     id: os
     attributes:
        label: os
@@ -34,13 +41,7 @@ body:
     attributes:
       label: browser
       description: if you think this is browser related issue, please provide the browser and version info
-  - type: input
-    id: version
-    validations:
-      required: true
-    attributes:
-      label: loonflow's version
-      description: please use the released version, name startswith 'r'. eg. r3.0.0, r.2.0.18 etc.
+
       
       
     
