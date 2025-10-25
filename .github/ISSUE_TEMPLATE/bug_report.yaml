@@ -29,8 +29,8 @@ body:
     validations:
       required: true
     attributes:
-      label: loonflow's version
-      description: please use the released version, name startswith 'r'. eg. r3.0.0, r.2.0.18 etc.
+      label: Version
+      description: please use the released version, name is startswith 'r'. eg. r3.0.0, r.2.0.18 etc.
   - type: input
     id: os
     attributes:
