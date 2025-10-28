@@ -1,0 +1,40 @@
+# Chinese translation of getting_started
+# Copyright (C) 2024
+# This file is distributed under the same license as the My Documentation project.
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-16 12:00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: \n"
+"Language-Team: zh_CN\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Getting Started"
+msgstr "快速入门"
+
+msgid "This section will help you get started with the documentation."
+msgstr "本节将帮助您开始使用文档。"
+
+msgid "Installation"
+msgstr "安装"
+
+msgid "To get started, follow these steps:"
+msgstr "要开始使用，请按照以下步骤操作："
+
+msgid "Quick Start"
+msgstr "快速开始"
+
+msgid "Here's a simple example to get you started:"
+msgstr "以下是一个简单的示例，帮助您开始："
+
+msgid "Next Steps"
+msgstr "下一步"
+
+msgid "Now that you have installed everything, you can:"
+msgstr "现在您已经安装了所有内容，您可以："
+

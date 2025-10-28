@@ -1,0 +1,46 @@
+# Chinese translation of user_guide
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: zh_CN\n"
+
+msgid "User Guide"
+msgstr "用户指南"
+
+msgid "This guide will walk you through the main features and how to use them."
+msgstr "本指南将引导您了解主要功能及其使用方法。"
+
+msgid "Basic Usage"
+msgstr "基本用法"
+
+msgid "This section explains the basic usage."
+msgstr "本节介绍基本用法。"
+
+msgid "Features"
+msgstr "功能"
+
+msgid "Feature 1"
+msgstr "功能一"
+
+msgid "Description of feature 1."
+msgstr "功能一的说明。"
+
+msgid "Feature 2"
+msgstr "功能二"
+
+msgid "Description of feature 2."
+msgstr "功能二的说明。"
+
+msgid "Configuration"
+msgstr "配置"
+
+msgid "You can configure the system using the configuration file."
+msgstr "您可以使用配置文件来配置系统。"
+
+msgid "Advanced Topics"
+msgstr "高级主题"
+
+msgid "For more advanced usage, see the dedicated section in :doc:`api_reference`."
+msgstr "有关更高级的用法，请参阅 :doc:`api_reference` 中的专门章节。"
+

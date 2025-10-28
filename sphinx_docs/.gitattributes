@@ -1,0 +1,21 @@
+# Normalize line endings for all files
+* text=auto
+
+# Ensure RST files use LF
+*.rst eol=lf
+*.rst.txt eol=lf
+
+# Ensure PO files use LF  
+*.po eol=lf
+*.pot eol=lf
+
+# Ensure Python files use LF
+*.py eol=lf
+
+# Ensure YAML files use LF
+*.yaml eol=lf
+*.yml eol=lf
+
+# Ensure conf.py uses LF
+conf.py eol=lf
+

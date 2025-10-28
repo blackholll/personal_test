@@ -1,0 +1,25 @@
+# Chinese translation of api_reference
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: zh_CN\n"
+
+msgid "API Reference"
+msgstr "API 参考"
+
+msgid "This section provides detailed API reference documentation."
+msgstr "本节提供详细的 API 参考文档。"
+
+msgid "Core Module"
+msgstr "核心模块"
+
+msgid "Main Class"
+msgstr "主类"
+
+msgid "Example Usage"
+msgstr "使用示例"
+
+msgid "Utilities"
+msgstr "工具函数"
+
