@@ -30,9 +30,15 @@ git push
 - **Repository URL**: 自动填充
 - **Default Branch**: main 或 master
 - **Default Version**: latest
-- **Python configuration file**: 留空（使用 .readthedocs.yaml）
-- **Requirements file**: sphinx_docs/requirements.txt
+- **Python configuration file**: `sphinx_docs/.readthedocs.yaml` ⚠️ **重要：必须指定这个路径**
+- **Requirements file**: 留空（由 .readthedocs.yaml 配置自动处理）
 - **Documentation type**: Sphinx HTML
+
+### 重要说明
+
+`.readthedocs.yaml` 文件放在 `sphinx_docs` 目录下。在 Read the Docs 的 "Config file" 字段中，您需要明确指定路径为：**`sphinx_docs/.readthedocs.yaml`**
+
+如果留空，Read the Docs 会在根目录查找 `.readthedocs.yaml`，导致找不到配置文件。
 
 ### 高级设置（多语言）
 

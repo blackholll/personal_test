@@ -29,6 +29,8 @@ make build-zh
 
 详见 `SETUP_README.md` 文件，包含完整的部署指南。
 
+**⚠️ 重要提示**：在 Read the Docs 项目设置的 "Config file" 字段中，必须填写：`sphinx_docs/.readthedocs.yaml`
+
 ## 目录结构
 
 ```

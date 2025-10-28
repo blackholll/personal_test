@@ -3,28 +3,29 @@
 ## 📁 已创建的文件结构
 
 ```
-sphinx_docs/
-├── .readthedocs.yaml          # Read the Docs 配置文件
-├── conf.py                     # Sphinx 主配置文件（已配置多语言）
-├── requirements.txt            # Python 依赖包
-├── Makefile                    # 构建脚本
-├── .gitignore                  # Git 忽略文件
-├── .gitattributes              # Git 属性配置
-├── README.md                   # 项目说明文档
-├── SETUP_README.md            # Read the Docs 部署指南
-├── index.rst                   # 主索引文件
-├── quick_start.rst             # 快速入门页面
-├── getting_started.rst         # 入门指南
-├── user_guide.rst              # 用户指南
-├── api_reference.rst           # API 参考文档
-├── locale/                     # 翻译文件目录
-│   └── zh_CN/                 # 简体中文
-│       └── LC_MESSAGES/
-│           ├── api_reference.po
-│           ├── getting_started.po
-│           └── user_guide.po
-├── _static/                    # 静态文件目录
-└── _templates/                 # 模板文件目录
+项目根目录/
+└── sphinx_docs/               # 文档目录
+    ├── .readthedocs.yaml      # Read the Docs 配置文件
+    ├── conf.py                 # Sphinx 主配置文件（已配置多语言）
+    ├── requirements.txt        # Python 依赖包
+    ├── Makefile                # 构建脚本
+    ├── .gitignore              # Git 忽略文件
+    ├── .gitattributes          # Git 属性配置
+    ├── README.md               # 项目说明文档
+    ├── SETUP_README.md        # Read the Docs 部署指南
+    ├── index.rst               # 主索引文件
+    ├── quick_start.rst         # 快速入门页面
+    ├── getting_started.rst     # 入门指南
+    ├── user_guide.rst          # 用户指南
+    ├── api_reference.rst       # API 参考文档
+    ├── locale/                 # 翻译文件目录
+    │   └── zh_CN/             # 简体中文
+    │       └── LC_MESSAGES/
+    │           ├── api_reference.po
+    │           ├── getting_started.po
+    │           └── user_guide.po
+    ├── _static/                # 静态文件目录
+    └── _templates/             # 模板文件目录
 ```
 
 ## ✅ 已完成的功能
@@ -137,7 +138,7 @@ make gettext
 1. 确保所有 `.po` 文件都已正确翻译
 2. Read the Docs 会自动检测和构建，无需手动触发
 3. 首次构建可能需要几分钟时间
-4. 检查 `.readthedocs.yaml` 拼写`（注意大小写）
+4. **重要**：在 Read the Docs 项目设置中，必须将 "Config file" 设置为：`sphinx_docs/.readthedocs.yaml`
 
 ## 🎉 完成
 
