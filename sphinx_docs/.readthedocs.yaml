@@ -14,6 +14,7 @@ build:
 # Note: This configuration file is in sphinx_docs/ directory
 sphinx:
    configuration: sphinx_docs/conf.py
+   builder: html
 
 # Configure the languages supported
 # English is the default, Chinese (Simplified) is also supported
@@ -27,4 +28,8 @@ formats:
 python:
    install:
    - requirements: sphinx_docs/requirements.txt
+
+# Additional build options
+submodules:
+  recursive: false
 

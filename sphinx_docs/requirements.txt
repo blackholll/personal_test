@@ -1,4 +1,6 @@
 sphinx>=7.0.0
 sphinx-rtd-theme>=2.0.0
 sphinx-intl>=0.9.6
+sphinx-sitemap>=2.0.0
+jieba>=0.42.1
 

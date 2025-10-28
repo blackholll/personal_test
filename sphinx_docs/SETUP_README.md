@@ -50,15 +50,22 @@ git push
    - "Build pull requests"
    - "Suggest taxonomies"
 
-## 步骤 4：创建中文子项目
+## 步骤 4：创建中文翻译子项目 ⚠️ 关键步骤
 
-1. 在 Read the Docs 项目页面，点击 "Admin" 标签
-2. 滚动到 "Translations" 部分
-3. 点击 "Add translation"
-4. 选择 "Chinese (Simplified)"
-5. 在新创建的子项目中：
-   - 在 "Advanced Settings" > "Language" 中选择 "Chinese (Simplified)"
-   - 在 "Config File" 中指定 `sphinx_docs/.readthedocs.yaml`
+这是**最重要的步骤**，没有这一步，中文文档不会被构建！
+
+1. 在 Read the Docs 项目页面，点击项目名称旁的**设置图标**（⚙️）
+2. 在左侧菜单中点击 **"Translations"**（翻译）
+3. 点击 **"Add Translation"**（添加翻译）
+4. 选择 **"Chinese (Simplified)"** (zh_CN)
+5. 点击 **"Add"**
+
+**配置中文子项目**：
+- 点击刚创建的中文项目
+- 进入 **"Settings"** → **"Advanced Settings"**
+- 确认 **Config file** 是：`sphinx_docs/.readthedocs.yaml`
+- 其他设置会自动继承
+- 保存并等待构建
 
 ## 步骤 5：触发构建
 

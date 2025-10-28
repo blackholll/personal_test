@@ -29,7 +29,17 @@ make build-zh
 
 详见 `SETUP_README.md` 文件，包含完整的部署指南。
 
-**⚠️ 重要提示**：在 Read the Docs 项目设置的 "Config file" 字段中，必须填写：`sphinx_docs/.readthedocs.yaml`
+**⚠️ 重要提示**：
+
+1. **配置路径**：在 Read the Docs 项目设置的 "Config file" 字段中，必须填写：`sphinx_docs/.readthedocs.yaml`
+
+2. **创建翻译子项目**（必须！否则中文文档不会被构建）：
+   - 进入项目 → Settings → Translations
+   - 点击 "Add Translation"
+   - 选择 "Chinese (Simplified)" (zh_CN)
+   - 点击 "Add"
+   
+   详情参见：`READTHEDOCS_ZH_BUILD.md`
 
 ## 目录结构
 

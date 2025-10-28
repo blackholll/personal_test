@@ -88,7 +88,7 @@ html_theme_options = {
     'sticky_navigation': True,
     'navigation_depth': 4,
     'includehidden': True,
-    'titles_only': False
+    'titles_only': False,
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
@@ -105,6 +105,20 @@ html_static_path = ['_static']
 # 'searchbox.html']``.
 #
 # html_sidebars = {}
+
+# -- Search language ----------------------------------------------------------
+
+# Improve search for Chinese: when building zh/zh_CN, use Chinese tokenizer
+try:
+    if language and language.lower().startswith('zh'):
+        html_search_language = 'zh'
+        # If jieba is available, Sphinx will use it automatically
+        # No extra options required for Sphinx>=4
+    else:
+        html_search_language = 'en'
+except Exception:
+    # Fallback to English if language is not defined
+    html_search_language = 'en'
 
 # -- Options for HTMLHelp output ---------------------------------------------
 
