@@ -16,6 +16,13 @@ import os
 import sys
 from datetime import datetime
 
+# Import jieba for Chinese search support
+try:
+    import jieba
+    HAS_JIEBA = True
+except ImportError:
+    HAS_JIEBA = False
+
 # -- Project information -----------------------------------------------------
 
 project = 'My Documentation'
@@ -109,13 +116,26 @@ html_static_path = ['_static']
 # -- Search language ----------------------------------------------------------
 
 # Configure search language based on the current language setting
-if language == 'zh_CN':
+if language and language.lower().startswith('zh'):
     html_search_language = 'zh'
-    html_search_options = {'type': 'default', 'dict': 'jieba'}
-elif language == 'en':
-    html_search_language = 'en'
+    html_search_options = {'dict': 'jieba'}
+    
+    # Use custom jieba splitter for better Chinese search
+    if HAS_JIEBA:
+        from sphinx.search import jssplitter
+        
+        def custom_splitter(inputstring):
+            """Custom splitter using jieba for Chinese text"""
+            # For Chinese, return jieba tokens
+            if any('\u4e00' <= char <= '\u9fff' for char in inputstring):
+                return list(jieba.cut_for_search(inputstring))
+            # For non-Chinese, use default splitter
+            return jssplitter.split(inputstring)
+        
+        jssplitter.split = custom_splitter
 else:
     html_search_language = 'en'
+    html_search_options = None
 
 # -- Options for HTMLHelp output ---------------------------------------------
 
