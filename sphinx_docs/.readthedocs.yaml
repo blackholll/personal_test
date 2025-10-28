@@ -13,7 +13,7 @@ build:
 # Build documentation with Sphinx
 # Note: This configuration file is in sphinx_docs/ directory
 sphinx:
-   configuration: conf.py
+   configuration: sphinx_docs/conf.py
 
 # Configure the languages supported
 # English is the default, Chinese (Simplified) is also supported
