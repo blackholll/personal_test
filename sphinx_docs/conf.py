@@ -108,16 +108,13 @@ html_static_path = ['_static']
 
 # -- Search language ----------------------------------------------------------
 
-# Improve search for Chinese: when building zh/zh_CN, use Chinese tokenizer
-try:
-    if language and language.lower().startswith('zh'):
-        html_search_language = 'zh'
-        # If jieba is available, Sphinx will use it automatically
-        # No extra options required for Sphinx>=4
-    else:
-        html_search_language = 'en'
-except Exception:
-    # Fallback to English if language is not defined
+# Configure search language based on the current language setting
+if language == 'zh_CN':
+    html_search_language = 'zh'
+    html_search_options = {'type': 'default', 'dict': 'jieba'}
+elif language == 'en':
+    html_search_language = 'en'
+else:
     html_search_language = 'en'
 
 # -- Options for HTMLHelp output ---------------------------------------------
